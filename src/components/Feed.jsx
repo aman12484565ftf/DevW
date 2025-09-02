@@ -26,6 +26,12 @@ const Feed = () => {
   useEffect(()=>{
 getFeed();
   },[])
+
+  //ADD CHECKS SO NOT BROKE DOWN 
+  if(!feed)return;
+  //suppose if we remove all the users from the feed now length =0 
+  if(feed.length<=0)return <h1 className="flex justify-center my-10">Your Feed Got all UP!No Users Found Today</h1>
+
   // only loads when there is feed 
   return feed && (
     <div className="flex justify-center my-10">
