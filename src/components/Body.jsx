@@ -25,7 +25,7 @@ catch(err){
   //token is not there so now we should navigate to login page user
   // FROM BACKEND AUTH
   if(err.status==401){
-//   // if (err.response && err.response.status === 401) {
+  //  if (err.response && err.response.status === 401) {
 // console.log("h1"+err);
 navigate("/login");
   }

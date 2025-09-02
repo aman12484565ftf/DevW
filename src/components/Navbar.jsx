@@ -19,6 +19,7 @@ function Navbar(){
   catch(err){
     //Error logic maybe rediect to error page
     console.log("logout unsuccessfull");
+    console.log(err);
   }
   }
 return (
@@ -48,7 +49,12 @@ return (
             <span className="badge">New</span>
             </Link>
             </li>
-        <li><a>Settings</a></li>
+        <li>
+          <Link to="/connections">Conections</Link>
+          </li>
+          <li>
+          <Link to="/requests">Friend Requests</Link>
+          </li>
         <li><a onClick={handleLogout}>Logout</a></li>
       </ul>
     </div>
