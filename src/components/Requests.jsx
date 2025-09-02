@@ -43,7 +43,7 @@ dispatch(removeRequest(_id))
     },[])
   
 
-    //  if(!requests)return;
+     if(!requests)return;
     if(requests.length===0)return <h1 className="flex justify-centermy-10">No Requests...Try Connecting</h1>
   return (
     <div className=" text-center my-10 ">

@@ -5,8 +5,9 @@ const requestSlice=createSlice({
     reducers:{
         addRequests:(state,action)=>action.payload,
         removeRequest:(state,action)=>state=>{
-            const newArray=state.filter((r)=>r._id!==action.payload);
-            return newArray;
+            // const newArray=state.filter((r)=>r._id!==action.payload);
+            // return newArray;
+                 return state.filter((r) => r._id !== action.payload);
         }
     }
 });
